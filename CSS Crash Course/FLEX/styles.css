@@ -16,11 +16,3 @@
     border: 2px solid grey;
 
 }
-flex-direction: column-reverse;
-flex-wrap: wrap-reverse;
-justify-content: center;
-
-flex-direction: column-reverse;
-align-items: flex-end;
-flex-wrap: wrap-reverse;
-justify-content: center;
