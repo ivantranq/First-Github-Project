@@ -1,0 +1,140 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    border: 4px solid darkgray;
+    width: 100px;
+    height: 100px;
+}
+.box-small{
+    width: 50px;
+    height: 50px;
+    margin-left: 24px;
+}
+
+.box-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container{
+    border: 4px solid darkgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+
+
+
+/* layout 2*/
+
+.container2{
+    border: 4px solid darkgray;
+    padding: 24px 24px 0 24px;
+}
+.row1{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.title{
+    border: 2px solid lightgray;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+.box-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+
+.box2{
+    border: 4px solid darkgray;
+    width: 30%;
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+/* Layout 3*/
+
+.container3{
+    border: 4px solid darkgray;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.boxwrapper{
+    width: 45%;
+    height: 100%;
+}
+
+.box3{
+    border: 2px solid lightgray;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.box-small{
+    height: 50px;
+}
+
+.box3-large{
+    border: 3px solid darkgray;
+    width: 45%;
+}
+
+/* Layout4 */
+
+.container4{
+    border: 4px solid darkgray;
+    padding: 24px;
+    
+    
+}
+
+.row4{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.set1{
+    width: 45%;
+}
+
+.set2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box4{
+    border: 2px solid lightgray;
+    width: 100%;
+}
+
+.box4-med{
+    margin-bottom: 24px;
+    height: 50px;
+}
+
+.box4-large{
+    border: 3px solid darkgray;
+    width: 45%;
+}
+
+.box4-small{
+    width: 30%;
+    height: 50px;
+}
