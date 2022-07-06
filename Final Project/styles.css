@@ -96,10 +96,69 @@ li {
 
 .wrapper {
     padding: 32px 32px 0 32px;
+    overflow: hidden;
 }
 
-.link__hover--effect {
+/* 
 
+BLOBS
+
+*/
+
+.section1-blob {
+    --tw-translate-x: -66.67%;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    pointer-events: none;
+    opacity: 0.05;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 16rem;
+    width: 16rem;
+    z-index: -10;
+}
+
+.section2-blob {
+    --tw-translate-x: 8rem;
+    --tw-translate-y: 12rem;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 16rem;
+    opacity: 0.25;
+}
+
+.section3-dots {
+    --tw-translate-x: 50%;
+    --tw-translate-y: 50%;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: currentcolor;
+    --tw-text-opacity: 1;
+    color: rgba(100,21,255,var(--tw-text-opacity));
+    z-index: -10;
 }
 
 /* 
@@ -158,8 +217,6 @@ nav {
 .nav__links {
     display: flex;
     align-items: center;
-    margin: 0 24px;
-    padding: 0 0 4px;
 }
 
 .nav__link {
@@ -168,20 +225,24 @@ nav {
     font-size: 14px;
     transition: all 300ms ease;
     cursor: pointer;
+    position: relative;
+    margin: 0 24px;
+    padding: 0 0 4px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 .nav__link:hover {
     color: #6415ff;
-    text-decoration: none;
+    border-bottom: 2px solid #6415ff;
 }
 
-.nav__links--login {
+.nav__link--login {
     margin: 0 24px 0 48px;
 }
 
 .nav__links--primary {
     margin: 0;
-    padding: 8px 32px 12px 32px;
+    padding: 12px 32px;
     background-color: #6415ff;
     border-radius: 9999px;
     color: rgba(247,250,252);
@@ -190,6 +251,8 @@ nav {
 }
 
 .nav__link--primary {
+    margin: 0;
+    padding: 0;
     color: #F7fafc !important;
 }
 
@@ -751,6 +814,11 @@ TESTIMONIALS
     margin-top: 40px;
 }
 
+.customer-arrows {
+    display: flex;
+    justify-content: space-between;
+}
+
 .customer{
     display: flex;
 }
@@ -764,6 +832,16 @@ TESTIMONIALS
 
 .customer__name{
     margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(36, 62, 99);
+}
+
+.customer__occupation {
+    font-size: 16px;
+    color: rgb(124, 139, 161);
+    font-weight: 500;
 }
 
 .customer__img--wrapper{
@@ -777,6 +855,42 @@ TESTIMONIALS
     width: 100%;
     height: 100%;
 }
+
+.arrows {
+    display: flex;
+    align-items: center;
+}
+
+.arrow__container {
+    display: flex;
+}
+
+.arrow-wrapper {
+    height: 16px;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6415ff;
+}
+
+.arrow {
+    padding: 16px;
+    margin: 0 12px;
+    background-color: rgb(237, 242, 247);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    cursor: not-allowed;
+}
+
+.arrow__divider {
+    border-right: 1px solid rgb(229, 231, 235);
+    height: 24px;
+    margin: 12px 0;
+}
+
+
 
 
 /* 
@@ -914,14 +1028,23 @@ FOOTER
     margin-bottom: 12px;
 }
 
+.sublink__wrapper {
+    margin-top: 12px;
+}
+
 .link__sublink {
     color: rgb(247, 250, 252);
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
-    margin-top: 12px;
     padding-bottom: 4px;
     cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: border-bottom-color 300ms ease;
+}
+
+.link__sublink:hover {
+    border-bottom-color: rgb(247, 250, 252);
 }
 
 .footer__info {
@@ -983,4 +1106,16 @@ FOOTER
 
 .social-link:not(:last-child) {
     margin-right: 16px;
+}
+
+/* 
+
+RESPONSIVE
+
+*/
+
+@media (min-width: 1024px) {
+    .landing {
+        display: flex;
+    }
 }
