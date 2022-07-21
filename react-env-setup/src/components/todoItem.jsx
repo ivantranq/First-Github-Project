@@ -1,10 +1,13 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = (props) => {
     return (
         <div>
-            <input type="checkbox" />
-            <p>This is a paragraph</p>  
+            <div style={{display: "flex"}}>
+                <input type="checkbox" />
+                <p style={{paddingLeft: 16, maxWidth: 200}}>{props.todo.text}</p>  
+            </div>
+            <hr />
         </div>
     );
 }
