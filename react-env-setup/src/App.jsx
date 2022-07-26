@@ -17,9 +17,8 @@ class App extends React.Component {
       const updatedTodos = prevState.todos.map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed
-          console.log(todo.completed)
+          console.log(todo.completed, todo.id, id)
         }
-        console.log(todo)
         return todo
       })
       return {
