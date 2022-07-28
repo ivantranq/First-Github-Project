@@ -1,0 +1,5 @@
+input[type=checkbox]:checked + p{
+    color: lightgray;
+    text-decoration: line-through;
+    font-style: italic
+}

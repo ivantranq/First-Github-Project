@@ -1,7 +1,8 @@
 import React from 'react';
+import './css/todoItems.css'
 
 const TodoItem = (props) => {
-    console.log("this ran", props.todo.id)
+    
     return (
         <div>
             <div style={{display: "flex"}}>
